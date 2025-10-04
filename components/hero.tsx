@@ -2,6 +2,7 @@
 
 import { ArrowDown } from "lucide-react"
 import Image from "next/image"
+import { getImagePath } from "@/lib/image-utils"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 export function Hero() {
@@ -11,7 +12,7 @@ export function Hero() {
     <section id="hero" className="relative min-h-screen flex items-center justify-center">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/romantic-wedding-couple-at-sunset-in-elegant-garde.jpg"
+          src={getImagePath("/romantic-wedding-couple-at-sunset-in-elegant-garde.jpg")}
           alt="Wedding couple"
           fill
           className="object-cover"
