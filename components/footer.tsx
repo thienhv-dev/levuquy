@@ -10,13 +10,7 @@ export function Footer() {
             <p className="font-serif text-2xl text-foreground">Thanh Tuyền & Văn Thiện</p>
             <Heart className="h-5 w-5 text-primary fill-primary" />
           </div>
-          <p className="text-sm text-muted-foreground">June 15, 2025 • Napa Valley, California</p>
-          <p className="text-xs text-muted-foreground">
-            For questions, please contact us at{" "}
-            <a href="mailto:wedding@sarahandmichael.com" className="text-primary hover:underline">
-              wedding@sarahandmichael.com
-            </a>
-          </p>
+          <p className="text-sm text-muted-foreground">Oct 12, 2025 • Đà Nẵng</p>
         </div>
       </div>
     </footer>

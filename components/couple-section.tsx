@@ -28,7 +28,7 @@ export function CoupleSection() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-24 md:py-32 bg-background">
+    <section ref={sectionRef} className="">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
             <div ref={ref} className="text-center mb-16">
