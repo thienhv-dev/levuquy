@@ -7,7 +7,7 @@ export function Footer() {
         <div className="text-center space-y-4">
           <div className="flex items-center justify-center gap-2">
             <Heart className="h-5 w-5 text-primary fill-primary" />
-            <p className="font-serif text-2xl text-foreground">Sarah & Michael</p>
+            <p className="font-serif text-2xl text-foreground">Thanh Tuyền & Văn Thiện</p>
             <Heart className="h-5 w-5 text-primary fill-primary" />
           </div>
           <p className="text-sm text-muted-foreground">June 15, 2025 • Napa Valley, California</p>

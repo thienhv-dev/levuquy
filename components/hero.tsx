@@ -12,7 +12,7 @@ export function Hero() {
     <section id="hero" className="relative min-h-screen flex items-center justify-center">
       <div className="absolute inset-0 z-0">
         <Image
-          src={getImagePath("/romantic-wedding-couple-at-sunset-in-elegant-garde.jpg")}
+          src={getImagePath("/ROM_6782.jpg")}
           alt="Wedding couple"
           fill
           className="object-cover"
@@ -28,7 +28,7 @@ export function Hero() {
               isVisible ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
             }`}
           >
-            Sarah & Michael
+            Thanh Tuyền & Văn Thiện
           </h1>
           <div
             className={`flex items-center justify-center gap-4 transition-all duration-1000 delay-300 ${
@@ -36,7 +36,7 @@ export function Hero() {
             }`}
           >
             <div className="h-px w-16 bg-primary" />
-            <p className="text-xl md:text-2xl uppercase tracking-widest text-foreground">June 15, 2025</p>
+            <p className="text-xl md:text-2xl uppercase tracking-widest text-foreground">Oct 12, 2025</p>
             <div className="h-px w-16 bg-primary" />
           </div>
           <p
@@ -44,19 +44,9 @@ export function Hero() {
               isVisible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
             }`}
           >
-            Napa Valley, California
+            Tổ 5 Thôn Thái Đông, Xã Thăng Trường, Thành phố Đà Nẵng
           </p>
         </div>
-
-        <button
-          onClick={() => {
-            document.getElementById("our-story")?.scrollIntoView({ behavior: "smooth" })
-          }}
-          className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce"
-          aria-label="Scroll to our story"
-        >
-          <ArrowDown className="h-8 w-8 text-primary" />
-        </button>
       </div>
     </section>
   )
