@@ -2,6 +2,7 @@
 
 import { MapPin, Clock } from "lucide-react"
 import Image from "next/image"
+import { getImagePath } from "@/lib/image-utils"
 import { Card } from "@/components/ui/card"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
@@ -32,7 +33,7 @@ export function VenueCards() {
             >
               <div className="aspect-[4/3] relative overflow-hidden rounded-t-lg">
                 <Image
-                  src="/romantic-couple-portrait-in-vineyard.jpg"
+                  src={getImagePath("/romantic-couple-portrait-in-vineyard.jpg")}
                   alt="Trường tiểu học Hoàng Văn Thụ"
                   fill
                   className="object-cover"
@@ -117,7 +118,7 @@ export function VenueCards() {
             >
               <div className="aspect-[4/3] relative overflow-hidden rounded-t-lg">
                 <Image
-                  src="/romantic-couple-portrait-in-vineyard.jpg"
+                  src={getImagePath("/romantic-couple-portrait-in-vineyard.jpg")}
                   alt="Tại Tư Gia"
                   fill
                   className="object-cover"

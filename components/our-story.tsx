@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card"
+import { getImagePath } from "@/lib/image-utils"
 import Image from "next/image"
 
 export function OurStory() {
@@ -38,7 +39,7 @@ export function OurStory() {
           </div>
 
           <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden">
-            <Image src="/happy-couple-laughing-together-in-nature.jpg" alt="Sarah and Michael" fill className="object-cover" />
+            <Image src={getImagePath("/happy-couple-laughing-together-in-nature.jpg")} alt="Sarah and Michael" fill className="object-cover" />
           </div>
         </div>
       </div>
