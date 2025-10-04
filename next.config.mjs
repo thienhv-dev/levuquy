@@ -9,9 +9,12 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  out: "export",
-  basePath: '/levuquy',
-  assetPrefix: '/levuquy',
+  output: "export",
+  // Only apply basePath and assetPrefix in production
+  ...(process.env.NODE_ENV === 'production' && {
+    basePath: '/levuquy',
+    assetPrefix: '/levuquy',
+  }),
 }
 
 export default nextConfig

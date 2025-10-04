@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import Image from "next/image"
 
 export function CoupleSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -31,7 +32,7 @@ export function CoupleSection() {
             {/* Bride */}
             <div className="relative group">
               <div className="aspect-[3/4] relative overflow-hidden rounded-2xl">
-                <img src="/elegant-bride-portrait-in-white-wedding-dress.jpg" alt="Cô Dâu" className="w-full h-full object-cover" />
+                <Image src="/elegant-bride-portrait-in-white-wedding-dress.jpg" alt="Cô Dâu" fill className="object-cover" />
                 {/* Overlay with animated text */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end justify-center pb-12">
                   <div
@@ -49,7 +50,7 @@ export function CoupleSection() {
             {/* Groom */}
             <div className="relative group">
               <div className="aspect-[3/4] relative overflow-hidden rounded-2xl">
-                <img src="/elegant-groom-portrait-in-black-tuxedo.jpg" alt="Chú Rể" className="w-full h-full object-cover" />
+                <Image src="/elegant-groom-portrait-in-black-tuxedo.jpg" alt="Chú Rể" fill className="object-cover" />
                 {/* Overlay with animated text */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end justify-center pb-12">
                   <div
