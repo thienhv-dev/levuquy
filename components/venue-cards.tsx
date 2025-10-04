@@ -1,6 +1,7 @@
 "use client"
 
 import { MapPin, Clock } from "lucide-react"
+import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
@@ -30,10 +31,11 @@ export function VenueCards() {
               }`}
             >
               <div className="aspect-[4/3] relative overflow-hidden rounded-t-lg">
-                <img
+                <Image
                   src="/romantic-couple-portrait-in-vineyard.jpg"
                   alt="Trường tiểu học Hoàng Văn Thụ"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="p-8 text-center">
@@ -114,10 +116,11 @@ export function VenueCards() {
               }`}
             >
               <div className="aspect-[4/3] relative overflow-hidden rounded-t-lg">
-                <img
+                <Image
                   src="/romantic-couple-portrait-in-vineyard.jpg"
                   alt="Tại Tư Gia"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="p-8 text-center">

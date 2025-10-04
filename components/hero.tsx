@@ -1,6 +1,7 @@
 "use client"
 
 import { ArrowDown } from "lucide-react"
+import Image from "next/image"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 export function Hero() {
@@ -9,10 +10,12 @@ export function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center">
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="/romantic-wedding-couple-at-sunset-in-elegant-garde.jpg"
           alt="Wedding couple"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
+          priority
         />
         <div className="absolute inset-0 bg-background/40" />
       </div>

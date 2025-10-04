@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card"
+import Image from "next/image"
 
 export function OurStory() {
   return (
@@ -37,7 +38,7 @@ export function OurStory() {
           </div>
 
           <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden">
-            <img src="/happy-couple-laughing-together-in-nature.jpg" alt="Sarah and Michael" className="w-full h-full object-cover" />
+            <Image src="/happy-couple-laughing-together-in-nature.jpg" alt="Sarah and Michael" fill className="object-cover" />
           </div>
         </div>
       </div>
