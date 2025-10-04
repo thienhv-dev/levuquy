@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 import { X, ChevronLeft, ChevronRight } from "lucide-react"
+import { getImagePath } from "@/lib/image-utils"
 
 export function Gallery() {
   const { ref, isVisible } = useScrollAnimation(0.1)
@@ -10,7 +11,7 @@ export function Gallery() {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const [isPaused, setIsPaused] = useState(false)
 
-  const images = [
+  const raxImages = [
     {
       src: "/DII_3638.jpg",
       alt: "Wedding Photo 1",
@@ -61,6 +62,11 @@ export function Gallery() {
       alt: "Wedding Photo 13",
     }
   ]
+
+  const images = raxImages.map(image => ({
+    ...image,
+    src: getImagePath(image.src)
+  }))
 
   const duplicatedImages = [...images, ...images, ...images]
 

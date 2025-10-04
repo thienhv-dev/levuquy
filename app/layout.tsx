@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "Sarah & Michael - Wedding",
+  title: "Thanh Tuyền & Văn Thiện - Wedding",
   description: "Join us as we celebrate our special day",
   generator: "v0.app",
 }
@@ -26,6 +26,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <head>
+        <meta property="og:image" content="https://thienhv-dev.github.io/levuquy/ROM_6782.jpg" />
+        <meta property="og:title" content="Thanh Tuyền & Văn Thiện - Wedding" />
+        <meta property="og:description" content="Join us as we celebrate our special day" />
+      </head>
       <body className={`font-sans overflow-x-hidden ${GeistSans.variable} ${GeistMono.variable} ${playfair.variable}`}>
         <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
         <Analytics />
