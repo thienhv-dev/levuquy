@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react"
 import { Volume2, VolumeX } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { getImagePath } from "@/lib/image-utils"
 
 export function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(true)
@@ -28,7 +29,7 @@ export function MusicPlayer() {
   return (
     <>
       <audio ref={audioRef} loop>
-        <source src="/ido.mp3" type="audio/mpeg" />
+        <source src={getImagePath("/ido.mp3")} type="audio/mpeg" />
       </audio>
       <Button
         onClick={toggleMusic}

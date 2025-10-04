@@ -105,11 +105,6 @@ export function SaveTheDateCalendar() {
                   </div>
                 </div>
               </div>
-
-              <div className="text-center mt-8 space-y-2">
-                <p className="font-serif text-2xl md:text-3xl text-foreground">Chủ Nhật, 12/10/2025</p>
-                <p className="text-lg md:text-xl text-muted-foreground">Âm lịch 20/8 | 12:00 PM</p>
-              </div>
             </div>
           </div>
         </div>
