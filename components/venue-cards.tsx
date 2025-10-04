@@ -31,14 +31,14 @@ export function VenueCards() {
                 isVisible ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
               }`}
             >
-              <div className="aspect-[4/3] relative overflow-hidden rounded-t-lg">
+              {/* <div className="aspect-[4/3] relative overflow-hidden rounded-t-lg">
                 <Image
                   src={getImagePath("/romantic-couple-portrait-in-vineyard.jpg")}
                   alt="Trường tiểu học Hoàng Văn Thụ"
                   fill
                   className="object-cover"
                 />
-              </div>
+              </div> */}
               <div className="p-8 text-center">
                 <div className="relative border-2 border-primary/20 rounded-lg p-6 mb-6 bg-gradient-to-br from-primary/5 to-transparent">
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-card px-4">
@@ -116,14 +116,14 @@ export function VenueCards() {
                 isVisible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
               }`}
             >
-              <div className="aspect-[4/3] relative overflow-hidden rounded-t-lg">
+              {/* <div className="aspect-[4/3] relative overflow-hidden rounded-t-lg">
                 <Image
                   src={getImagePath("/romantic-couple-portrait-in-vineyard.jpg")}
                   alt="Tại Tư Gia"
                   fill
                   className="object-cover"
                 />
-              </div>
+              </div> */}
               <div className="p-8 text-center">
                 <div className="relative border-2 border-primary/20 rounded-lg p-6 mb-6 bg-gradient-to-br from-primary/5 to-transparent">
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-card px-4">

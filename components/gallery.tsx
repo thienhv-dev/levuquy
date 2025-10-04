@@ -12,29 +12,54 @@ export function Gallery() {
 
   const images = [
     {
-      src: "/romantic-couple-portrait-in-vineyard.jpg",
-      alt: "Couple in vineyard",
+      src: "/DII_3638.jpg",
+      alt: "Wedding Photo 1",
+    },
+    // DII_3650.jpg
+    {
+      src: "/DII_3650.jpg",
+      alt: "Wedding Photo 2",
     },
     {
-      src: "/engagement-ring-close-up-with-flowers.jpg",
-      alt: "Engagement ring",
+      src: "/DII_3781.jpg",
+      alt: "Wedding Photo 3",
     },
     {
-      src: "/couple-sunset-beach-walk.png",
-      alt: "Beach sunset",
+      src: "/DII_3899.jpg",
+      alt: "Wedding Photo 5",
     },
     {
-      src: "/laughing-couple-outdoors.png",
-      alt: "Laughing together",
+      src: "/DII_3949.jpg",
+      alt: "Wedding Photo 6",
     },
     {
-      src: "/romantic-dinner-date-night.jpg",
-      alt: "Dinner date",
+      src: "/DII_4110.jpg",
+      alt: "Wedding Photo 7",
     },
     {
-      src: "/mountain-hiking-couple.png",
-      alt: "Mountain hike",
+      src: "/DII_4140.jpg",
+      alt: "Wedding Photo 8",
     },
+    {
+      src: "/DII_4265.jpg",
+      alt: "Wedding Photo 9",
+    },
+    {
+      src: "/DII_4452.jpg",
+      alt: "Wedding Photo 10",
+    },
+    {
+      src: "/DII_4512.jpg",
+      alt: "Wedding Photo 11",
+    },
+    {
+      src: "/DII_4553.jpg",
+      alt: "Wedding Photo 12",
+    },
+    {
+      src: "/DII_4575.jpg",
+      alt: "Wedding Photo 13",
+    }
   ]
 
   const duplicatedImages = [...images, ...images, ...images]
@@ -105,7 +130,7 @@ export function Gallery() {
               isVisible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
             }`}
           >
-            Our Journey
+            We get married
           </h2>
           <div className="h-px w-24 bg-primary mx-auto" />
         </div>

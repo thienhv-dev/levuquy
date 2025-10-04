@@ -11,15 +11,15 @@ export function SaveTheDateCalendar() {
 
   const calendarDays = [
     // Week 1
-    [null, null, null, 1, 2, 3, 4],
+    [null, null, 1, 2, 3, 4, 5],
     // Week 2
-    [5, 6, 7, 8, 9, 10, 11],
+    [6, 7, 8, 9, 10, 11, 12],
     // Week 3
-    [12, 13, 14, 15, 16, 17, 18],
+    [13, 14, 15, 16, 17, 18, 19],
     // Week 4
-    [19, 20, 21, 22, 23, 24, 25], // 22 is wedding day
+    [20, 21, 22, 23, 24, 25, 26], // 12 is wedding day
     // Week 5
-    [26, 27, 28, 29, 30, 31, null],
+    [27, 28, 29, 30, 31, null, null],
   ]
 
   return (
@@ -60,11 +60,11 @@ export function SaveTheDateCalendar() {
                 {/* Photo with calendar overlay */}
                 <div className="relative aspect-[3/4] rounded-sm overflow-hidden">
                   <Image
-                    src="/romantic-wedding-couple-at-sunset-in-elegant-garde.jpg"
+                    src="/DII_4110.jpg"
                     alt="Wedding couple"
                     fill
                     className="object-cover"
-                    onClick={() => setSelectedImage("/romantic-wedding-couple-at-sunset-in-elegant-garde.jpg")}
+                    onClick={() => setSelectedImage("/DII_4110.jpg")}
                   />
 
                   {/* Calendar overlay */}
@@ -80,11 +80,11 @@ export function SaveTheDateCalendar() {
                                 className={`
                                   aspect-square flex items-center justify-center
                                   text-white font-medium text-xs md:text-base
-                                  ${day === 22 ? "relative" : ""}
+                                  ${day === 12 ? "relative" : ""}
                                   ${!day ? "invisible" : ""}
                                 `}
                               >
-                                {day === 22 ? (
+                                {day === 12 ? (
                                   <>
                                     {/* Heart shape background for wedding day */}
                                     <div className="absolute inset-0 flex items-center justify-center">
