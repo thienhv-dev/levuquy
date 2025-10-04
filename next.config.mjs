@@ -10,11 +10,8 @@ const nextConfig = {
     unoptimized: true,
   },
   output: "export",
-  // Only apply basePath and assetPrefix in production
-  ...(process.env.NODE_ENV === 'production' && {
-    basePath: '/levuquy',
-    assetPrefix: '/levuquy',
-  }),
+  basePath: '/levuquy',
+  assetPrefix: '/levuquy',
 }
 
 export default nextConfig
