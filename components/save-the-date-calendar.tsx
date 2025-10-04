@@ -2,6 +2,7 @@
 
 import { Heart } from "lucide-react"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
+import { getImagePath } from "@/lib/image-utils"
 import Image from "next/image"
 import { useState } from "react"
 
@@ -60,7 +61,7 @@ export function SaveTheDateCalendar() {
                 {/* Photo with calendar overlay */}
                 <div className="relative aspect-[3/4] rounded-sm overflow-hidden">
                   <Image
-                    src="/DII_4110.jpg"
+                    src={getImagePath("/DII_4110.jpg")}
                     alt="Wedding couple"
                     fill
                     className="object-cover"
