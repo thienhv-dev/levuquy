@@ -8,8 +8,12 @@ export function getImagePath(imagePath: string): string {
     return imagePath
   }
   
+  // Check if we're in a build/production environment
+  // GitHub Actions sets NODE_ENV=production during build
+  const isProduction = process.env.NODE_ENV === 'production' || process.env.GITHUB_ACTIONS === 'true'
+  
   // In development, return original path
-  if (process.env.NODE_ENV === 'development') {
+  if (!isProduction) {
     return imagePath
   }
   
