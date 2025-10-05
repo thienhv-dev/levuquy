@@ -48,7 +48,7 @@ export function RomanticMoments() {
           </div>
             <div className="relative w-full max-w-2xl mx-auto mb-8">
               <Image
-                src={getImagePath("/DII_3638.jpg")}
+                src={getImagePath("/DII_3638_UI.jpg")}
                 alt="Romantic couple moment"
                 width={600}
                 height={400}
@@ -124,7 +124,7 @@ export function RomanticMoments() {
           <div className="grid grid-cols-2 gap-4 md:gap-8 mb-4 md:mb-8">
             <div className="relative">
               <Image
-                src={getImagePath("/ROM_6615.jpg")}
+                src={getImagePath("/ROM_6615_UI.jpg")}
                 alt="Couple with bouquet"
                 width={500}
                 height={700}
@@ -134,7 +134,7 @@ export function RomanticMoments() {
             </div>
             <div className="relative">
               <Image
-                src={getImagePath("/ROM_7527.jpg")}
+                src={getImagePath("/ROM_7527_UI.jpg")}
                 alt="Couple close-up"
                 width={500}
                 height={700}
@@ -148,7 +148,7 @@ export function RomanticMoments() {
           <div className="grid grid-cols-3 gap-3 md:gap-6 mb-4 md:mb-8">
             <div className="relative">
               <Image
-                src={getImagePath("/ROM_7360.jpg")}
+                src={getImagePath("/ROM_7360_UI.jpg")}
                 alt="Formal portrait"
                 width={400}
                 height={600}
@@ -158,7 +158,7 @@ export function RomanticMoments() {
             </div>
             <div className="relative">
               <Image
-                src={getImagePath("/DII_4140.jpg")}
+                src={getImagePath("/DII_4140_UI.jpg")}
                 alt="Embracing pose"
                 width={400}
                 height={600}
@@ -168,7 +168,7 @@ export function RomanticMoments() {
             </div>
             <div className="relative">
               <Image
-                src={getImagePath("/DII_4933.jpg")}
+                src={getImagePath("/DII_4933_UI.jpg")}
                 alt="Playful moment"
                 width={400}
                 height={600}
@@ -181,7 +181,7 @@ export function RomanticMoments() {
           {/* Third row: 1 large image spanning full width */}
           <div className="relative w-full mb-4 md:mb-8">
             <Image
-              src={getImagePath("/DII_3457.jpg")}
+              src={getImagePath("/DII_3457_UI.jpg")}
               alt="Groom lifting bride"
               width={1200}
               height={600}
@@ -194,7 +194,7 @@ export function RomanticMoments() {
           <div className="grid grid-cols-3 gap-4 md:gap-8 mb-4 md:mb-8">
             <div className="relative col-span-1">
               <Image
-                src={getImagePath("/DII_3899.jpg")}
+                src={getImagePath("/DII_3899_UI.jpg")}
                 alt="With bouquet"
                 width={400}
                 height={600}
@@ -204,7 +204,7 @@ export function RomanticMoments() {
             </div>
             <div className="relative col-span-2">
               <Image
-                src={getImagePath("/DII_4575.jpg")}
+                src={getImagePath("/DII_4575_UI.jpg")}
                 alt="Intimate moment"
                 width={800}
                 height={600}
@@ -237,7 +237,7 @@ export function RomanticMoments() {
           <div className="grid grid-cols-2 gap-4 md:gap-8 items-start mb-8 md:mb-12">
             <div className="relative md:justify-self-end">
               <Image
-                src={getImagePath("/DII_4452.jpg")}
+                src={getImagePath("/DII_4452_UI.jpg")}
                 alt="Couple standing together"
                 width={400}
                 height={600}
@@ -247,7 +247,7 @@ export function RomanticMoments() {
             </div>
             <div className="relative">
               <Image
-                src={getImagePath("/ROM_6984.jpg")}
+                src={getImagePath("/ROM_6984_UI.jpg")}
                 alt="Couple embracing"
                 width={500}
                 height={700}
@@ -259,7 +259,7 @@ export function RomanticMoments() {
 
           <div className="relative w-full max-w-3xl mx-auto">
             <Image
-              src={getImagePath("/ROM_6818.jpg")}
+              src={getImagePath("/ROM_6818_UI.jpg")}
               alt="Playful couple moment"
               width={800}
               height={600}

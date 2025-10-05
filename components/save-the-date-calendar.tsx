@@ -61,7 +61,7 @@ export function SaveTheDateCalendar() {
                 {/* Photo with calendar overlay */}
                 <div className="relative aspect-[3/4] rounded-sm overflow-hidden">
                   <Image
-                    src={getImagePath("/DII_4110.jpg")}
+                    src={getImagePath("/DII_4110_UI.jpg")}
                     alt="Wedding couple"
                     fill
                     className="object-cover"

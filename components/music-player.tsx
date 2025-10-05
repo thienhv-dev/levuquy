@@ -1,34 +1,26 @@
 "use client"
 
 import { useState, useRef, useEffect } from "react"
-import { Volume2, VolumeX } from "lucide-react"
+import { Volume2, VolumeX, Music } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { getImagePath } from "@/lib/image-utils"
 
 export function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false)
   const audioRef = useRef<HTMLAudioElement>(null)
-  const [hasInteracted, setHasInteracted] = useState(false)
+  const [showOverlay, setShowOverlay] = useState(true)
 
-  useEffect(() => {
-    const handleFirstClick = () => {
-      if (!hasInteracted && audioRef.current) {
-        setHasInteracted(true)
-        setIsPlaying(true)
-        audioRef.current.play().catch(() => {
-          // Silently handle autoplay failure
-          setIsPlaying(false)
-        })
-        document.removeEventListener("click", handleFirstClick)
-      }
+  const handleOverlayClick = () => {
+    setShowOverlay(false)
+    setIsPlaying(true)
+    if (audioRef.current) {
+      audioRef.current.play().catch(() => {
+        setIsPlaying(false)
+      })
     }
-
-    document.addEventListener("click", handleFirstClick)
-    return () => document.removeEventListener("click", handleFirstClick)
-  }, [hasInteracted])
+  }
 
   useEffect(() => {
-    if (hasInteracted && audioRef.current) {
+    if (audioRef.current) {
       if (isPlaying) {
         audioRef.current.play().catch(() => {
           setIsPlaying(false)
@@ -37,7 +29,7 @@ export function MusicPlayer() {
         audioRef.current.pause()
       }
     }
-  }, [isPlaying, hasInteracted])
+  }, [isPlaying])
 
   const toggleMusic = () => {
     setIsPlaying(!isPlaying)
@@ -46,8 +38,24 @@ export function MusicPlayer() {
   return (
     <>
       <audio ref={audioRef} loop>
-        <source src={getImagePath("/ido.mp3")} type="audio/mpeg" />
+        <source src="/ido.mp3" type="audio/mpeg" />
       </audio>
+
+      {showOverlay && (
+        <div
+          onClick={handleOverlayClick}
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-background/95 backdrop-blur-sm cursor-pointer"
+        >
+          <div className="text-center space-y-6 animate-in fade-in duration-500">
+            <Music className="h-16 w-16 mx-auto text-primary animate-pulse" />
+            <div className="space-y-2">
+              <h2 className="font-['Dancing_Script'] text-3xl font-serif text-foreground">Chào mừng <br /> Bạn đến với ngày trọng đại</h2>
+              <p className="font-['Dancing_Script'] text-muted-foreground">Nhấn vào bất kỳ đâu để bắt đầu</p>
+            </div>
+          </div>
+        </div>
+      )}
+
       <Button
         onClick={toggleMusic}
         size="icon"
