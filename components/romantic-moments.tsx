@@ -69,7 +69,7 @@ export function RomanticMoments() {
               <p className="font-['Dancing_Script'] text-xl md:text-3xl text-[#4a4a4a] leading-relaxed px-8">
                 Từ khi gặp em,
                 <br />
-                mới giấc mơ của anh đều có em bên cạnh.
+                mỗi giấc mơ của anh đều có em bên cạnh.
                 <br />
                 Mỗi câu yêu thương trong sách anh đọc,
                 <br />

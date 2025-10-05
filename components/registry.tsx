@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Card } from "@/components/ui/card"
 import { Gift } from "lucide-react"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import { getImagePath } from "@/lib/image-utils"
 
 export function Registry() {
   const [showQRCode, setShowQRCode] = useState(false)
@@ -45,7 +46,7 @@ export function Registry() {
           </DialogHeader>
           <div className="flex flex-col items-center gap-4 py-4">
             <img
-              src="/qr-code-for-bank-transfer.png"
+              src={getImagePath("/qr-code-for-bank-transfer.png")}
               alt="QR Code"
               className="w-64 h-64 border-2 border-border rounded-lg"
             />
