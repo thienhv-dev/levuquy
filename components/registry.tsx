@@ -15,7 +15,7 @@ export function Registry() {
           <div className="text-center mb-16">
             <h2 className="font-serif text-5xl md:text-6xl text-foreground mb-6 text-balance">Quà Tặng</h2>
             <div className="h-px w-24 bg-primary mx-auto mb-6" />
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="font-['Dancing_Script'] text-lg text-muted-foreground max-w-2xl mx-auto">
               Sự hiện diện của quý khách là món quà quý giá nhất với chúng tôi. <br />Nếu quý khách muốn gửi tặng chúng tôi
               một món quà, xin vui lòng nhấn vào biểu tượng bên dưới.
             </p>
@@ -45,7 +45,7 @@ export function Registry() {
           </DialogHeader>
           <div className="flex flex-col items-center gap-4 py-4">
             <img
-              src="/qr-code-for-bank-transfer.jpg"
+              src="/qr-code-for-bank-transfer.png"
               alt="QR Code"
               className="w-64 h-64 border-2 border-border rounded-lg"
             />

@@ -28,7 +28,7 @@ export function CoupleSection() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="">
+    <section ref={sectionRef} className="pt-4 pb-10 md:pt-8 md:pb-20">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
             <div ref={ref} className="text-center mb-16">
@@ -53,7 +53,7 @@ export function CoupleSection() {
                       isVisible ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
                     }`}
                   >
-                    <p className="text-white/90 text-lg md:text-xl mb-2 font-light tracking-wider">Cô Dâu</p>
+                    <p className="font-['Dancing_Script'] text-white/90 text-lg md:text-xl mb-2 font-light tracking-wider">Cô Dâu</p>
                     <h3 className="font-serif text-white text-4xl md:text-5xl">Trần Thị Thanh Tuyền</h3>
                   </div>
                 </div>
@@ -71,7 +71,7 @@ export function CoupleSection() {
                       isVisible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
                     }`}
                   >
-                    <p className="text-white/90 text-lg md:text-xl mb-2 font-light tracking-wider">Chú Rể</p>
+                    <p className="font-['Dancing_Script'] text-white/90 text-lg md:text-xl mb-2 font-light tracking-wider">Chú Rể</p>
                     <h3 className="font-serif text-white text-4xl md:text-5xl">Hồ Văn Thiện</h3>
                   </div>
                 </div>

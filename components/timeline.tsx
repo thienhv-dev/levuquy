@@ -63,7 +63,7 @@ export function Timeline() {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl text-[#f5e6d3] text-balance leading-tight" style={{ fontFamily: 'Great Vibes, cursive' }}>
+            <h2 className="font-['Dancing_Script'] text-2xl md:text-4xl lg:text-5xl text-[#f5e6d3] text-balance leading-tight">
               Hòa chung niềm vui ngày cưới | 12.10.2025
             </h2>
           </div>
@@ -100,10 +100,10 @@ export function Timeline() {
 
                       {/* Content - flexible width */}
                       <div className="flex-1 min-w-0 pt-0 md:pt-1">
-                        <div className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1 md:mb-2" style={{ fontFamily: 'Dancing Script, cursive' }}>
+                        <div className="font-['Dancing_Script'] text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1 md:mb-2">
                           {event.time}
                         </div>
-                        <div className="text-base md:text-lg lg:text-xl text-[#f5e6d3] leading-relaxed" style={{ fontFamily: 'Great Vibes, cursive' }}>
+                        <div className="font-['Dancing_Script'] text-base md:text-lg lg:text-xl text-[#f5e6d3] leading-relaxed">
                           {event.title}
                         </div>
                       </div>
