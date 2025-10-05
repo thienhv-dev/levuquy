@@ -252,7 +252,7 @@ export function RomanticMoments() {
                 width={500}
                 height={700}
                 className="w-full h-auto max-h-[500px] md:max-h-[700px] object-cover rounded-lg shadow-xl cursor-pointer hover:scale-105 transition-transform duration-300"
-                onClick={() => setLightboxImage("/ROM_6984.jpg")}
+                onClick={() => setLightboxImage(getImagePath("/ROM_6984.jpg"))}
               />
             </div>
           </div>
