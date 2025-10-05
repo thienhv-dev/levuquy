@@ -44,7 +44,7 @@ export function Hero() {
               isVisible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
             }`}
           >
-            Tổ 5 Thôn Thái Đông, Xã Thăng Trường, Thành phố Đà Nẵng
+            Tổ 5 Thôn Thái Đông, Xã Thăng Trường <br /> Thành phố Đà Nẵng
           </p>
         </div>
       </div>
