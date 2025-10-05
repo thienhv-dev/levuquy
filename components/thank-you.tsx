@@ -2,29 +2,41 @@
 
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 import { Heart } from "lucide-react"
+import { useState, useEffect } from "react"
+
+interface HeartPosition {
+  left: string
+  top: string
+  width: string
+  height: string
+  animationDelay: string
+  animationDuration: string
+}
 
 export function ThankYou() {
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation(0.1)
   const { ref: messageRef, isVisible: messageVisible } = useScrollAnimation(0.1)
   const { ref: signatureRef, isVisible: signatureVisible } = useScrollAnimation(0.1)
 
+  const [heartPositions, setHeartPositions] = useState<HeartPosition[]>([])
+
+  useEffect(() => {
+    const positions = [...Array(15)].map(() => ({
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      width: `${20 + Math.random() * 40}px`,
+      height: `${20 + Math.random() * 40}px`,
+      animationDelay: `${Math.random() * 5}s`,
+      animationDuration: `${8 + Math.random() * 4}s`,
+    }))
+    setHeartPositions(positions)
+  }, [])
+
   return (
     <section className="relative py-32 md:py-40 overflow-hidden bg-gradient-to-b from-background via-primary/5 to-background">
       <div className="absolute inset-0 pointer-events-none">
-        {[...Array(15)].map((_, i) => (
-          <Heart
-            key={i}
-            className="absolute text-primary/20 animate-float"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              width: `${20 + Math.random() * 40}px`,
-              height: `${20 + Math.random() * 40}px`,
-              animationDelay: `${Math.random() * 5}s`,
-              animationDuration: `${8 + Math.random() * 4}s`,
-            }}
-            fill="currentColor"
-          />
+        {heartPositions.map((position, i) => (
+          <Heart key={i} className="absolute text-primary/20 animate-float" style={position} fill="currentColor" />
         ))}
       </div>
 

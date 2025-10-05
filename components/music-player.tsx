@@ -8,19 +8,36 @@ import { getImagePath } from "@/lib/image-utils"
 export function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false)
   const audioRef = useRef<HTMLAudioElement>(null)
+  const [hasInteracted, setHasInteracted] = useState(false)
 
   useEffect(() => {
-    if (audioRef.current) {
+    const handleFirstClick = () => {
+      if (!hasInteracted && audioRef.current) {
+        setHasInteracted(true)
+        setIsPlaying(true)
+        audioRef.current.play().catch(() => {
+          // Silently handle autoplay failure
+          setIsPlaying(false)
+        })
+        document.removeEventListener("click", handleFirstClick)
+      }
+    }
+
+    document.addEventListener("click", handleFirstClick)
+    return () => document.removeEventListener("click", handleFirstClick)
+  }, [hasInteracted])
+
+  useEffect(() => {
+    if (hasInteracted && audioRef.current) {
       if (isPlaying) {
-        audioRef.current.play().catch((error) => {
-          console.log("[v0] Audio play failed:", error)
+        audioRef.current.play().catch(() => {
           setIsPlaying(false)
         })
       } else {
         audioRef.current.pause()
       }
     }
-  }, [isPlaying])
+  }, [isPlaying, hasInteracted])
 
   const toggleMusic = () => {
     setIsPlaying(!isPlaying)
