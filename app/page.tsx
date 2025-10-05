@@ -13,6 +13,8 @@ import { Timeline } from "@/components/timeline"
 import { Registry } from "@/components/registry"
 import { MusicPlayer } from "@/components/music-player"
 import { ThankYou } from "@/components/thank-you"
+import { RomanticMoments } from "@/components/romantic-moments"
+import { Countdown } from "@/components/countdown"
 
 export default function WeddingPage() {
   return (
@@ -22,9 +24,10 @@ export default function WeddingPage() {
       <Hero />
       <SaveTheDateCalendar />
       <CoupleSection />
+      <Countdown />
       <VenueCards />
       <Timeline />
-      <Gallery />
+      <RomanticMoments />
       <Registry />
       <ThankYou />
       <Footer />

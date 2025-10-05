@@ -46,8 +46,8 @@ export function SaveTheDateCalendar() {
                   isVisible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
                 }`}
               >
-                <p className="text-lg md:text-xl text-foreground/80">Đi một vòng lớn rồi vẫn gặp anh,</p>
-                <p className="text-lg md:text-xl text-foreground/80">Từ đó, thế gian bỗng hóa dịu dàng.</p>
+                <p className="font-['Dancing_Script'] text-lg md:text-xl text-foreground/80">Đi một vòng lớn rồi vẫn gặp anh,</p>
+                <p className="font-['Dancing_Script'] text-lg md:text-xl text-foreground/80">Từ đó, thế gian bỗng hóa dịu dàng.</p>
               </div>
             </div>
 

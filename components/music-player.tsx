@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { getImagePath } from "@/lib/image-utils"
 
 export function MusicPlayer() {
-  const [isPlaying, setIsPlaying] = useState(true)
+  const [isPlaying, setIsPlaying] = useState(false)
   const audioRef = useRef<HTMLAudioElement>(null)
 
   useEffect(() => {

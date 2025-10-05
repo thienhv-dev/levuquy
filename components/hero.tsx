@@ -40,7 +40,7 @@ export function Hero() {
             <div className="h-px w-16 bg-primary" />
           </div>
           <p
-            className={`text-lg md:text-xl text-muted-foreground transition-all duration-1000 delay-500 ${
+            className={`font-['Dancing_Script'] text-lg md:text-xl text-muted-foreground transition-all duration-1000 delay-500 ${
               isVisible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
             }`}
           >

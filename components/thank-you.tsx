@@ -59,7 +59,7 @@ export function ThankYou() {
               messageVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             } mb-12`}
           >
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto text-pretty">
+            <p className="font-['Dancing_Script'] text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto text-pretty">
               Cảm ơn bạn đã dành thời gian ghé thăm trang web của chúng tôi.
               <br />
               Sự hiện diện của bạn trong ngày trọng đại này
