@@ -81,7 +81,7 @@ export function VenueCards() {
                   </div>
                   <div className="flex items-center gap-3 justify-center">
                     <Clock className="h-5 w-5 text-primary" />
-                    <p className="font-['Dancing_Script'] text-foreground font-medium">Vào lúc 10:00 AM</p>
+                    <p className="font-['Dancing_Script'] text-foreground font-medium">Vào lúc 10:30 AM</p>
                   </div>
                 </div>
 
