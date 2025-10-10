@@ -28,21 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Primary Open Graph / Social meta */}
-        <meta property="og:image" content="https://thienhv-dev.github.io/levuquy/ROM_6782.jpg" />
-        <meta property="og:image:secure_url" content="https://thienhv-dev.github.io/levuquy/ROM_6782.jpg" />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Thanh Tuyền & Văn Thiện - Wedding" />
+        <meta property="og:image" content="https://thienhv-dev.github.io/levuquy/ROM_6634.jpg" />
         <meta property="og:title" content="Thanh Tuyền & Văn Thiện - Wedding" />
         <meta property="og:description" content="Hãy tham gia cùng chúng tôi để kỷ niệm ngày đặc biệt của chúng tôi" />
-
-        {/* Twitter card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://thienhv-dev.github.io/levuquy/ROM_6782.jpg" />
-        <meta name="twitter:title" content="Thanh Tuyền & Văn Thiện - Wedding" />
-        <meta name="twitter:description" content="Hãy tham gia cùng chúng tôi để kỷ niệm ngày đặc biệt của chúng tôi" />
       </head>
       <body className={`font-sans overflow-x-hidden ${GeistSans.variable} ${GeistMono.variable} ${playfair.variable}`}>
         <div className="fixed inset-0 pointer-events-none z-0 bg-gradient-to-b from-background via-primary/5 to-background">
