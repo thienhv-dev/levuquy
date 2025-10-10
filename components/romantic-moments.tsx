@@ -257,16 +257,16 @@ export function RomanticMoments() {
             </div>
           </div>
 
-          <div className="relative w-full max-w-3xl mx-auto">
-            <Image
-              src={getImagePath("/ROM_6818_UI.jpg")}
-              alt="Playful couple moment"
-              width={800}
-              height={600}
-              className="w-full h-auto max-h-[600px] md:max-h-[600px] object-cover rounded-lg shadow-xl cursor-pointer hover:scale-105 transition-transform duration-300"
-              onClick={() => setLightboxImage(getImagePath("/ROM_6818.jpg"))}
-            />
-          </div>
+            <div className="relative w-full mx-auto mt-10 md:mt-8 max-w-6xl">
+              <Image
+                src={getImagePath("/ROM_6818_UI.jpg")}
+                alt="Playful couple moment"
+                width={1920}
+                height={1080}
+                className="w-full h-auto max-h-[1000px] object-cover object-top rounded-lg shadow-xl cursor-pointer hover:scale-105 transition-transform duration-300"
+                onClick={() => setLightboxImage(getImagePath("/ROM_6818.jpg"))}
+              />
+            </div>
         </div>
       </section>
 
