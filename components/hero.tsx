@@ -15,7 +15,7 @@ export function Hero() {
           src={getImagePath("/ROM_6782.jpg")}
           alt="Wedding couple"
           fill
-          className="object-cover"
+          className="object-cover object-[50%_10%]"
           priority
         />
         <div className="absolute inset-0 bg-background/40" />

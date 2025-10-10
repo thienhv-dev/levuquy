@@ -23,6 +23,8 @@ export function SaveTheDateCalendar() {
     [27, 28, 29, 30, 31, null, null],
   ]
 
+  const dayHeaders = ["M", "T", "W", "T", "F", "S", "S"]
+
   return (
     <>
       <section className="py-24 md:py-32 bg-background">
@@ -46,8 +48,12 @@ export function SaveTheDateCalendar() {
                   isVisible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
                 }`}
               >
-                <p className="font-['Dancing_Script'] text-lg md:text-xl text-foreground/80">Đi một vòng lớn rồi vẫn gặp anh,</p>
-                <p className="font-['Dancing_Script'] text-lg md:text-xl text-foreground/80">Từ đó, thế gian bỗng hóa dịu dàng.</p>
+                <p className="font-['Dancing_Script'] text-lg md:text-xl text-foreground/80">
+                  Đi một vòng lớn rồi vẫn gặp anh,
+                </p>
+                <p className="font-['Dancing_Script'] text-lg md:text-xl text-foreground/80">
+                  Từ đó, thế gian bỗng hóa dịu dàng.
+                </p>
               </div>
             </div>
 
@@ -61,7 +67,7 @@ export function SaveTheDateCalendar() {
                 {/* Photo with calendar overlay */}
                 <div className="relative aspect-[3/4] rounded-sm overflow-hidden">
                   <Image
-                    src={getImagePath("/DII_4110_UI.jpg")}
+                    src={getImagePath("/DII_4110_UI.jpg") || "/placeholder.svg"}
                     alt="Wedding couple"
                     fill
                     className="object-cover"
@@ -71,6 +77,23 @@ export function SaveTheDateCalendar() {
                   {/* Calendar overlay */}
                   <div className="absolute inset-0 flex items-center justify-center p-4 md:p-8">
                     <div className="w-full max-w-md">
+                      <div className="text-center mb-3 md:mb-4">
+                        <p className="font-['Dancing_Script'] text-[#f5f1e8] font-bold text-xl md:text-2xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] tracking-wider">
+                          Oct 12, 2025
+                        </p>
+                      </div>
+
+                      <div className="grid grid-cols-7 gap-1 md:gap-2 mb-1 md:mb-2">
+                        {dayHeaders.map((day, index) => (
+                          <div
+                            key={index}
+                            className="aspect-square flex items-center justify-center text-[#f5f1e8] font-semibold text-xs md:text-sm drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
+                          >
+                            {day}
+                          </div>
+                        ))}
+                      </div>
+
                       {/* Calendar grid */}
                       <div className="space-y-1 md:space-y-2">
                         {calendarDays.map((week, weekIndex) => (
@@ -80,8 +103,8 @@ export function SaveTheDateCalendar() {
                                 key={dayIndex}
                                 className={`
                                   aspect-square flex items-center justify-center
-                                  text-white font-medium text-xs md:text-base
-                                  ${day === 12 ? "relative" : ""}
+                                  font-medium text-xs md:text-base
+                                  ${day === 12 ? "relative" : "text-[#f5f1e8]"}
                                   ${!day ? "invisible" : ""}
                                 `}
                               >
@@ -91,10 +114,12 @@ export function SaveTheDateCalendar() {
                                     <div className="absolute inset-0 flex items-center justify-center">
                                       <Heart className="h-8 w-8 md:h-12 md:w-12 fill-red-500 text-red-500" />
                                     </div>
-                                    <span className="relative z-10 text-white font-bold">{day}</span>
+                                    <span className="relative z-10 text-[#f5f1e8] font-bold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                                      {day}
+                                    </span>
                                   </>
                                 ) : (
-                                  <span className="drop-shadow-lg">{day}</span>
+                                  <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">{day}</span>
                                 )}
                               </div>
                             ))}
