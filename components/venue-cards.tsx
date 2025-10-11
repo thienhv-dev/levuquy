@@ -42,7 +42,7 @@ export function VenueCards() {
                       </h4>
                       <div className="space-y-1">
                         <p className="text-foreground text-sm">
-                          <span className="font-semibold">Bà:</span> Lệ Thị Thu Hà
+                          <span className="font-semibold">Bà:</span> Lê Thị Thu Hà
                         </p>
                         <p className="text-muted-foreground text-xs leading-relaxed">
                           Tổ 5, Thôn Thái Đông, Xã Thăng Trường, TP Đà Nẵng
